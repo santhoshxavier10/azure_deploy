@@ -10,7 +10,7 @@ scaler = pickle.load(open("scaler.pkl", "rb"))
 
 @app.route("/")
 def home():
-    return "Diabetes Prediction API"
+    return "Diabetes Application API"
 
 @app.route("/predict", methods=["POST"])
 def predict():
@@ -25,3 +25,4 @@ def predict():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
